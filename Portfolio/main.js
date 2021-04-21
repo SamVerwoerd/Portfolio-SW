@@ -14,5 +14,11 @@ const colorHandler = function(){
         button.textContent = "Light Mode";
     }
 }
+const Converter = function() {
+    let days = document.getElementById("numberDays").value;
+    document.getElementById("hours").innerHTML = days / 24;
+    // console.log(days, hours);
+  }
 
 button.addEventListener('click', colorHandler);
+
